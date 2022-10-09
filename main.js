@@ -64,6 +64,7 @@ function load_repos() {
 
 view_all.onclick = function load_all_repos() {
   if (view_all.textContent == "Veja todos") {
+    section_repositories.innerHTML=""
     let number_obj = 0
 
     while (number_obj < repo_obj.length - 2) {
