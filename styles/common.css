@@ -1,0 +1,14 @@
+.flex-row-center {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+}
+.flex-spacebetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.margin-left {
+    margin-left: 16px;
+}
