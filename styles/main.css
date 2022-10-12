@@ -16,8 +16,8 @@
     padding: 32px 0px 49px 0px;
 }
 .profile__img {
-    width: 128px;
-    height: 128px;
+    width: 60%;
+    aspect-ratio: 1/1;
     border-radius: 100%;
     outline: solid 2px rgb(0, 255, 21);
     margin-bottom: 30px;
@@ -89,7 +89,9 @@
     padding: 30px 20px;
 }
 .experiences__ol, .education__ol {
-    margin-left: 20px;
+    margin-left: 0px;
+    padding-left: 40px;
+    list-style: disc;
 }
 .section--rightsection {
     width: 100%;
@@ -132,16 +134,14 @@
     padding: 30px;
 }
 .card--repositories {
+    position: absolute;
     opacity: 0;
     transform: translateY(-50px);
     flex-direction: column;
     margin-bottom: 30px;
     transition: 0.5s;
 }
-.card--repositories.active {
-    transform: translateY(0px);
-    opacity: 1;
-}
+
 .repositories__a {
     text-decoration: none;
     color: var(--text-color);
@@ -194,4 +194,48 @@
 }
 .repositories__icon--folder {
     font-size: 24px;
+}
+.recent-courses__article {
+    transform: translateY(-50px);
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px;
+    transition: 0.5s;
+}
+.recent-courses__img {
+    height: auto;
+
+}
+.recent-courses__infos {
+    margin-right: 20px;
+}
+.article--download-cv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+.download-cv {
+    color: var(--text-color);
+    text-decoration: none;
+    border: solid 1px var(--text-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.download-cv:hover {
+    background-color: var(--text-color);
+    color: aliceblue;
+}
+
+
+
+
+/*animations*/
+.opacity-animation {
+    transform: translateY(0px);
+    opacity: 1;
+    position: unset;
 }

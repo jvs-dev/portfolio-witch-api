@@ -1,8 +1,13 @@
 
 var repo_url = 'https://api.github.com/users/jvs-dev/repos'
+var userInfo_url = 'https://api.github.com/users/jvs-dev'
 var repo_obj = await(await fetch(repo_url)).json();
-var view_all = document.getElementById("view_all")
+var userInfo_obj = await(await fetch(userInfo_url)).json();
+var view_all = document.getElementById("view_all-repos")
 var section_repositories = document.getElementById("git_repositories")
+var profileImg = document.getElementById("profileImg")
+
+profileImg.src = userInfo_obj.avatar_url
 
 function load_repos() {
   let number_obj = 0
@@ -12,7 +17,6 @@ function load_repos() {
     section_repositories.insertAdjacentElement("beforeend", article)
     article.classList.add("rightsection__card")
     article.classList.add("card--repositories")
-    article.classList.add("active")
     function thisdescription() {
       if (repo_obj[number_obj].description == null) {
         return "this repository not have a description :("
@@ -58,6 +62,9 @@ function load_repos() {
                         </span>
                     </div>
     `
+    setTimeout(() => {
+      article.classList.add("opacity-animation")
+    }, 1);
     number_obj = number_obj + 1
   }
 }
@@ -119,7 +126,7 @@ view_all.onclick = function load_all_repos() {
     `
       view_all.textContent = "Veja menos"
       setTimeout(() => {
-        article.classList.add("active")
+        article.classList.add("opacity-animation")
       }, 1);
       number_obj = number_obj + 1
     }

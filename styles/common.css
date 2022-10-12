@@ -9,6 +9,13 @@
     justify-content: space-between;
     align-items: center;
 }
+.flex-column-spacebetween {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 30px;
+}
 .margin-left {
     margin-left: 16px;
 }
