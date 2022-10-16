@@ -48,13 +48,13 @@ function loadcourses(amountCourses) {
 }
 
 view_all_courses.onclick = function () {
-    if (view_all_courses.textContent == "Veja todos") {
-        view_all_courses.textContent="Veja menos"
+    if (view_all_courses.textContent == "view all") {
+        view_all_courses.textContent="view less"
         courses_section.innerHTML=""
         loadcourses(courses_obj[0].courses.length)
     } else {
         courses_section.innerHTML=""
-        view_all_courses.textContent="Veja todos"
+        view_all_courses.textContent="view all"
         loadcourses(2)
     }
 }

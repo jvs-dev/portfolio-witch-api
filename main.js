@@ -70,7 +70,7 @@ function load_repos() {
 }
 
 view_all.onclick = function load_all_repos() {
-  if (view_all.textContent == "Veja todos") {
+  if (view_all.textContent == "view all") {
     section_repositories.innerHTML=""
     let number_obj = 0
 
@@ -124,7 +124,7 @@ view_all.onclick = function load_all_repos() {
                         </span>
                     </div>
     `
-      view_all.textContent = "Veja menos"
+      view_all.textContent = "view less"
       setTimeout(() => {
         article.classList.add("opacity-animation")
       }, 1);
@@ -133,7 +133,7 @@ view_all.onclick = function load_all_repos() {
   } else {
     section_repositories.innerHTML=""
     load_repos()
-    view_all.textContent = "Veja todos"
+    view_all.textContent = "view all"
   }
 }
 
