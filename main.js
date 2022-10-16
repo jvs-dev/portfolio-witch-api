@@ -139,3 +139,8 @@ view_all.onclick = function load_all_repos() {
 
 load_repos()
 
+var download_cv = document.getElementById("download_cv")
+download_cv.onclick = function () {
+  window.navigator.vibrate(300)
+}
+
