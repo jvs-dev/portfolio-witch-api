@@ -1,19 +1,19 @@
 var courses_jsonData = [{
     "courses": [
         {
-            "title": "Trilha conectar (Rocketseat)",
-            "description": "Concluiu com sucesso a trilha Conectar do Discover em 31.07.2022. O currículo de aprendizado inclui: fundamentos da programação, funcionamento de computadores, internet e mais.",
-            "infos": "Carga horária:2h23min &nbsp &nbsp &nbsp #JavaScript &nbsp &nbsp &nbsp #CSS &nbsp &nbsp &nbsp #HTML"
+            "title": "Trail connect (Rocketseat)",
+            "description": "Successfully completed the Discover Connect track on 7/31/2022. The learning curriculum includes: programming fundamentals, computer operation, the internet and more.",
+            "infos": "Workload: 2h23min &nbsp &nbsp &nbsp #JavaScript &nbsp &nbsp &nbsp #CSS &nbsp &nbsp &nbsp #HTML"
         },
         {
             "title": "Dio",
-            "description": "Em 15 de Fevereiro de 2022, concluiu o curso Programação para internet com JavaScript",
-            "infos": "carga horária de 2h &nbsp &nbsp &nbsp #JavaScript"
+            "description": "On February 15, 2022, he completed the Internet Programming with JavaScript course",
+            "infos": "Workload: 2h &nbsp &nbsp &nbsp #JavaScript"
         },
         {
             "title": "Dio",
-            "description": "em 17 de Fevereiro de 2022, concluiu o curso Posicionando elementos com Flexbox em CSS",
-            "infos": "carga horária de 4h &nbsp &nbsp &nbsp #CSS"
+            "description": "On February 17, 2022, completed the course Positioning elements with Flexbox in CSS",
+            "infos": "Workload: 4h &nbsp &nbsp &nbsp #CSS"
         }
     ]
 }]
