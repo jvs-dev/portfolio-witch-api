@@ -231,7 +231,45 @@
 }
 
 
-
+@media only screen and (max-width: 600px) {
+    #main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section--rightsection {
+        margin-left: 0px;
+    }
+    .rightsection__repositories {
+        flex-direction: column;
+    }
+    .card--repositories {
+        width: 100%;
+    }
+    .recent-courses__article {
+        flex-direction: column;
+        height: auto;
+    }
+    .recent-courses__infos {
+        margin-right: 0px;
+        text-align: center;
+    }
+    .recent-courses__description {
+        text-align: justify;
+        margin: 20px 0px;
+    }
+    .recent-courses__title {
+        margin-top: 20px;
+    }
+    .informations__article {
+        width: 100%;
+    }
+    .article--download-cv {
+        order: -1;
+    }
+    .article--profile {
+        order: -2;
+    }
+  }
 
 /*animations*/
 .opacity-animation {
