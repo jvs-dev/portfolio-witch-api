@@ -19,7 +19,7 @@ function load_repos() {
     article.classList.add("card--repositories")
     function thisdescription() {
       if (repo_obj[number_obj].description == null) {
-        return "this repository not have a description :("
+        return "this repository not have a description."
       } else {
         return repo_obj[number_obj].description
       }
@@ -81,7 +81,7 @@ view_all.onclick = function load_all_repos() {
       article.classList.add("card--repositories")
       function thisdescription() {
         if (repo_obj[number_obj].description == null) {
-          return "this repository not have a description :("
+          return "this repository not have a description."
         } else {
           return repo_obj[number_obj].description
         }
